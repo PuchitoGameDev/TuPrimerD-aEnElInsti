@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Bienvenidos al Instituto!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 2rem 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 */
+            height: 0;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            background-color: #000;
+        }
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+        }
+        footer {
+            margin-top: 3rem;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>¡Bienvenidos al Nuevo Curso!</h1>
+        <p>Instituto de Educación Secundaria</p>
+    </header>
+
+    <div class="container">
+        <h2>Mensaje de Bienvenida</h2>
+        <p>Estamos muy emocionados de recibiros en este nuevo año escolar. Reproduce el vídeo a continuación para conocer a vuestros profesores, las instalaciones y todo lo que os espera.</p>
+
+        <div class="video-wrapper">
+            <video controls preload="metadata">
+                <source src="bienvenida.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de vídeos. Por favor, actualiza tu navegador.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 IES CASTRO ALOBRE.</p>
+    </footer>
+
+</body>
+</html>
